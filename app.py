@@ -9,7 +9,7 @@ from ollama import chat
 # ------------------------------
 st.set_page_config(
     page_title="PageIndex Intelligence Analyzer",
-    page_icon="🚀",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -105,7 +105,7 @@ st.sidebar.markdown("---")
 st.sidebar.header("💡 Hướng dẫn sử dụng")
 st.sidebar.markdown("""
 1. Nhập câu hỏi ở khung chính hoặc chọn câu hỏi mẫu.
-2. Bấm "🚀 Bắt đầu phân tích".
+2. Bấm " Bắt đầu phân tích".
 3. Xem kết quả câu trả lời và các node tham chiếu.
 """)
 
@@ -120,7 +120,7 @@ with col_left:
         placeholder="Ví dụ: Liệt kê các mục trong Deployment Options..."
     )
     
-    if st.button("🚀 Bắt đầu phân tích"):
+    if st.button(" Bắt đầu phân tích"):
         if not user_question_input.strip():
             st.warning("⚠️ Vui lòng nhập nội dung câu hỏi!")
         else:
