@@ -5,7 +5,7 @@ import numpy as np
 from pypdf import PdfReader
 from docx import Document
 import tempfile
-from google import genai
+import google.generativeai as genai
 import os
 from dotenv import load_dotenv
 
@@ -19,8 +19,8 @@ load_dotenv()
 # GEMINI CONFIG
 # ======================================
 
-client = genai.Client(
-    api_key=os.environ["GEMINI_API_KEY"]
+genai.configure(
+    api_key=st.secrets["GEMINI_API_KEY"]
 )
 
 # ======================================
