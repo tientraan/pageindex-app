@@ -10,3 +10,4 @@ torchvision
 transformers
 scikit-learn
 scipy
+google-genai
