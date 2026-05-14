@@ -1,13 +1,8 @@
 streamlit
+google-genai
 sentence-transformers
 faiss-cpu
-numpy
 pypdf
 python-docx
-google-generativeai
-torch
-torchvision
-transformers
-scikit-learn
-scipy
-google-genai
+python-dotenv
+numpy
